@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(diabites.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    background-color: #7195a4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 2rem auto;
+    width: 80% ;
+    max-width: 600px;
+    }
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+div{
+    display: none;
+    padding: 10px;
+    background-color: white;
+}
+.pregnancies:hover + div{
+    display: block;    
+}
+.glucose:hover + div{
+    display: block;    
+}
+.Blood:hover + div{
+    display: block;    
+}
+.Skin:hover + div{
+    display: block;    
+}
+.insulin:hover + div{
+    display: block;    
+}
+.bmi:hover + div{
+    display: block;    
+}
+.diabetes:hover + div{
+    display: block;    
+}
+.age:hover + div{
+    display: block;    
+}
+.outcome:hover + div{
+    display: block;    
+}
+
+h2 {
+    color: #37AFE1;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #37AFE1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background-color: #37AFE1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #7195a4;
+    color: white;
+    margin-top: 2rem;
+}
+.submit {
+    width: 540px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.submit:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.submit:active {
+    color: #000
+}
+
+.submit:active:after {
+    background: transparent;
+}
+
+.submit:hover:before {
+    opacity: 1;
+}
+
+.submit:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #747474;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

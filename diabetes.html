@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Dataset Form</title>
+    <link rel="stylesheet" href="diabites.css">
+</head>
+<body>
+    <header>
+        <h1>Diabetes Patient Information Form</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h2>Diabetes Dataset</h2>
+            <label class="pregnancies" for="pregnancies">Pregnancies:</label>
+            <div>Pregnancy Status.</div>
+            <input type="number" id="pregnancies" name="pregnancies" required>
+
+            <label class="glucose" for="glucose">Glucose Level:</label>
+            <div>Simple Monosaccharide.</div>
+            <input type="number" id="glucose" name="glucose" step="0.01" required>
+
+            <label class="Blood" for="blood_pressure">Blood Pressure:</label>
+            <div>Blood pressure is the force of blood pushing against the walls of your arteries.</div>
+            <input type="number" id="blood_pressure" name="blood_pressure" required>
+
+            <label class="Skin" for="skin_thickness">Skin Thickness:</label>
+            <div>The measurement of skin thickness in 66 patients with type 1 diabetes aged 24 to 38 years, followed by investigating whether it was correlated with long-term glycemic control and the presence of certain diseases.</div>
+            <input type="number" id="skin_thickness" name="skin_thickness" step="0.1" required>
+
+            <label class="insulin" for="insulin">Insulin Level:</label>
+            <div>A polypeptide hormone that regulates carbohydrate metabolism.</div>
+            <input type="number" id="insulin" name="insulin" step="0.1" required>
+
+            <label class="bmi" for="bmi">BMI:</label>
+            <div>Body Mass Index (BMI).</div>
+            <input type="number" id="bmi" name="bmi" step="0.1" required>
+
+            <label class="diabetes" for="diabetes_pedigree_function">Diabetes Pedigree Function:</label>
+            <div>Function that evaluates the probability of diabetes based on family history.</div>
+            <input type="number" id="diabetes_pedigree_function" name="diabetes_pedigree_function" step="0.01" required>
+
+            <label class="age" for="age">Age:</label>
+            <div>Patient's Age.</div>
+            <input type="number" id="age" name="age" required>
+
+            <label class="outcome" for="outcome">Outcome:</label>
+            <div>Class Variable (0 if non-diabetic, 1 if diabetic).</div>
+            <select id="outcome" name="outcome" required>
+                <option value="0">Non-Diabetic</option>
+                <option value="1">Diabetic</option>
+            </select>
+
+            
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Diabetes Dataset Form</p>
+        <nav>
+            <a href="index.html">Go to Healthcare Dataset Form</a>
+        </nav>
+        
+    </footer>
+</body>
+</html>

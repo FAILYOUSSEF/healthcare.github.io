@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare and Diabetes Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Information Form</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h2>Healthcare Dataset</h2>
+           
+            <label for="id" class="identifier">ID (Numeric):</label>
+            <div id="id">Unique Identifier</div>
+            <input type="number" id="id" name="id" required>
+            
+
+            <label for="gender" class="gender">Gender:</label>
+            <div>Genre du patient</div>
+            <select id="gender" name="gender" required>
+                <option value="">--Select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="age" class="age">Age:</label>
+            <div>Patient's age</div>
+            <input type="number" id="age" name="age" required>
+
+            <label for="hypertension" class="hypertension">Hypertension:</label>
+            <div>Patient's Hypertension</div>
+            <select id="hypertension" name="hypertension" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label for="heart_disease" class="heart_disease">Heart Disease:</label>
+            <div>Cardiopathy</div>
+            <select id="heart_disease" name="heart_disease" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label for="married" class="married">Ever Married:</label>
+            <div>Marital Status of the Patient</div>
+            <select id="married" name="married" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <label for="work_type" class="work_type">Work Type:</label>
+            <div>Type of Employment.</div>
+            <select id="work_type" name="work_type" required>
+                <option value="">--Select--</option>
+                <option value="children">Children</option>
+                <option value="govt_job">Government Job</option>
+                <option value="never_worked">Never Worked</option>
+                <option value="private">Private</option>
+                <option value="self_employed">Self-Employed</option>
+            </select>
+
+            <label for="residence" class="residence">Residence Type:</label>
+            <div>Type of Residence</div>
+            <select id="residence" name="residence" required>
+                <option value="rural">Rural</option>
+                <option value="urban">Urban</option>
+            </select>
+
+            <label for="glucose" class="glucose">Average Glucose Level:</label>
+            <div>Average Blood Glucose Level</div>
+            <input type="number" id="glucose" name="glucose" step="0.01" required>
+
+            <label for="bmi" class="bmi">BMI:</label>
+            <div>Body Mass Index (BMI)</div>
+            <input type="number" id="bmi" name="bmi" step="0.1" required>
+
+            <label for="smoking_status" class="smoking_status">Smoking Status:</label>
+            <div>Patient's Smoking Status</div>
+            <select id="smoking_status" name="smoking_status" required>
+                <option value="never_smoked">Never Smoked</option>
+                <option value="formerly_smoked">Formerly Smoked</option>
+                <option value="smokes">Smokes</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <label for="stroke" class="stroke">Stroke:</label>
+            <div>Stroke</div>
+            <select id="stroke" name="stroke" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Healthcare and Diabetes Dataset Form</p>
+        <nav>
+            <a href="diabetes.html">Go to Diabetes Dataset Form</a>
+        </nav>
+        
+    </footer>
+</body>
+</html>
